@@ -49,7 +49,7 @@ Given a table SALARIES, such as the one below, that has m = male and f = female 
 
 ## 4 Write a SQL query to find the 10th highest employee salary from an Employee table. Explain your answer.
 ANSWER ON WEBSITE: This can be done as follows:
-SELECT TOP (1) Salary FROM   (SELECT DISTINCT TOP (10) Salary FROM Employee ORDER BY Salary DESC) AS Emp ORDER BY Salary
+<p>SELECT TOP (1) Salary FROM   (SELECT DISTINCT TOP (10) Salary FROM Employee ORDER BY Salary DESC) AS Emp ORDER BY Salary</p>
 SOME RELATED INFORMATION FOR RANKING ETC.
 SELECT TOP (1000) [EmployeeKey]      ,[FirstName]      ,[LastName]      ,[Gender]      ,[PayFrequency]
       ,[BaseRate]      ,[DepartmentName]
