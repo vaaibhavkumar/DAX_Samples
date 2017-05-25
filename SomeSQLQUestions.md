@@ -38,7 +38,7 @@ SELECT Name FROM Customers WHERE ReferredBy <> 2;
 <b>What will be the result of the query? Why? What would be a better way to write it?</b>
 <b>Ans: Important Term / Concept is: SQL Server uses three-valued logic (True, False, Unknows), which can be troublesome for programmers accustomed to the more satisfying two-valued logic (TRUE or FALSE) </b>
 
-## 3. Swapping values in SQL
+## 3 Swapping values in SQL
 Given a table SALARIES, such as the one below, that has m = male and f = female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update query and no intermediate temp table.Id  Name  Sex  Salary
 1   A     m    2500
 2   B     f    1500
@@ -63,3 +63,9 @@ SELECT TOP (1000) [EmployeeKey]      ,[FirstName]      ,[LastName]      ,[
 ## 5 Write a SQL query using UNION ALL (not UNION) that uses the WHERE clause to eliminate duplicates. Why might you want to do this?
 Ans: SELECT * FROM mytable WHERE a=X UNION ALL SELECT * FROM mytable WHERE b=Y<b>AND a!=X</b>
 The key is the <b>AND a!=X</b> part. This gives you the benefits of the UNION (a.k.a., UNION DISTINCT) command, while avoiding much of its performance hit.
+
+## 6 Recursive CTE
+https://technet.microsoft.com/en-us/library/ms186243(v=sql.105).aspx
+Try to write it : Example
+
+The following example shows the semantics of the recursive CTE structure by returning a hierarchical list of employees, starting with the highest ranking employee, in the Adventure Works Cycles company.
