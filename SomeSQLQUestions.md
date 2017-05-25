@@ -40,3 +40,5 @@ Here is a query written to return the list of customers not referred by Jane Smi
 SELECT Name FROM Customers WHERE ReferredBy <> 2;
 
 <b>What will be the result of the query? Why? What would be a better way to write it?</b>
+
+<b>Ans: Important Term / Concept is: SQL Server uses three-valued logic (True, False, Unknows), which can be troublesome for programmers accustomed to the more satisfying two-valued logic (TRUE or FALSE) </b>
