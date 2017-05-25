@@ -60,3 +60,6 @@ SELECT TOP (1000) [EmployeeKey]      ,[FirstName]      ,[LastName]      ,[
 	  , ROW_NUMBER() OVER (ORDER BY BASERATE) AS ROWNUMBER_BASERATE_OVERALL  --(Continous and NON REPEATING ROW_NUMBER)
 	    FROM [AdventureWorksDW2012].[dbo].[DimEmployee] 
 		ORDER BY [DepartmentName],RANK_BASERATE_DEPARTMENT
+## 5 Write a SQL query using UNION ALL (not UNION) that uses the WHERE clause to eliminate duplicates. Why might you want to do this?
+Ans: <n>SELECT * FROM mytable WHERE a=X UNION ALL SELECT * FROM mytable WHERE b=Y<b>AND a!=X</b></n>
+The key is the <b>AND a!=X</b> part. This gives you the benefits of the UNION (a.k.a., UNION DISTINCT) command, while avoiding much of its performance hit.
