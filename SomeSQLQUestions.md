@@ -61,5 +61,5 @@ The key is the <b>AND a!=X</b> part. This gives you the benefits of the UNION (a
 ## 6 Recursive CTE
 https://technet.microsoft.com/en-us/library/ms186243(v=sql.105).aspx
 Try to write it : Example
-
-The following example shows the semantics of the recursive CTE structure by returning a hierarchical list of employees, starting with the highest ranking employee, in the Adventure Works Cycles company.
+The following example shows the semantics of the recursive CTE structure by returning a hierarchical list of employees, starting with the highest ranking employee, in the Adventure Works Cycles company. 
+The semantics of the recursive execution is as follows:Split the CTE expression into anchor and recursive members.Run the anchor member(s) creating the first invocation or base result set (T0).Run the recursive member(s) with Ti as an input and Ti+1 as an output.Repeat step 3 until an empty set is returned.Return the result set. This is a UNION ALL of T0 to Tn. 
